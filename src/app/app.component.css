@@ -23,7 +23,7 @@ body {
   width: 100%;
   padding: 10px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .header {
@@ -37,7 +37,6 @@ body {
   padding: 30px;
   display: flex;
   justify-content: center;
-  
 }
 
 /* Sub1 + Sub2 */

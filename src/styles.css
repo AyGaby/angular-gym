@@ -1,164 +1,162 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    margin: 0;
-    padding: 100px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-size: cover;
-    backdrop-filter: brightness(0.5);
-    font-family: "Lexend Deca", sans-serif;
-    background-image: url(../assets/images/Fondopesas.png);
-  }
-  
-  .logo {
-    width: 120px;
-  }
-  
-  .logo img {
-    width: 100%;
-    padding: 10px;
-    filter: drop-shadow rgb(60 21 97);
-  }
-  
-  .nav-container {
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    justify-content: end;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  /* Transforma tu cuerpo */
-  .main1-container {
-    color: #fff7ffde;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    
-  }
-  
-  /* Sub1 + Sub2 */
-  .main2-container {
-    width: 100%;
-    padding: 1px;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  /* No Pain */
-  .sub1 {
-    width: 83%;
-    padding: 6px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .botonera:hover {
-    transform: scale(1.04);
-  }
-  
-  /* CSS */
+  margin: 0;
+  padding: 100px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-size: cover;
+  backdrop-filter: brightness(0.5);
+  font-family: "Lexend Deca", sans-serif;
+  background-image: url(./assets/images/Fondopesas.png);
+}
+
+.logo {
+  width: 120px;
+}
+
+.logo img {
+  width: 100%;
+  padding: 10px;
+  filter: drop-shadow rgb(60 21 97);
+}
+
+.nav-container {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Transforma tu cuerpo */
+.main1-container {
+  color: #fff7ffde;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Sub1 + Sub2 */
+.main2-container {
+  width: 100%;
+  padding: 1px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* No Pain */
+.sub1 {
+  width: 83%;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.botonera:hover {
+  transform: scale(1.04);
+}
+
+/* CSS */
+.botonSombra {
+  align-items: center;
+  background-color: #ebe7e7;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #585858;
+  cursor: pointer;
+  display: flex;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.botonSombra:after {
+  background-color: #01f7ff;
+  border-radius: 8px;
+  content: "";
+  mix-blend-mode: color;
+  display: block;
+  height: 45px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+.botonSombra:hover:after {
+  transform: translate(0, 0);
+}
+
+.botonSombra:active {
+  background-color: rgb(60 21 97);
+  outline: 0;
+}
+
+.botonSombra:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
   .botonSombra {
-    align-items: center;
-    background-color: #ebe7e7;
-    border: 2px solid #111;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #585858;
-    cursor: pointer;
-    display: flex;
-    font-family: "Lexend Deca";
-    font-size: 16px;
-    height: 48px;
-    justify-content: center;
-    line-height: 24px;
-    max-width: 100%;
-    padding: 0 25px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    touch-action: manipulation;
+    padding: 0 35px;
   }
-  
-  .botonSombra:after {
-    background-color: #01f7ff;
-    border-radius: 8px;
-    content: "";
-    mix-blend-mode: color;
-    display: block;
-    height: 45px;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
-    transition: transform 0.2s ease-out;
-    z-index: -1;
-  }
-  
-  .botonSombra:hover:after {
-    transform: translate(0, 0);
-  }
-  
-  .botonSombra:active {
-    background-color: rgb(60 21 97);
-    outline: 0;
-  }
-  
-  .botonSombra:hover {
-    outline: 0;
-  }
-  
-  @media (min-width: 768px) {
-    .botonSombra {
-      padding: 0 35px;
-    }
-  }
-  
-  section {
-    display: flex;
-    justify-content: center;
-    width: 600px;
-    height: 450px;
-  }
-  
-  img {
-    width: 0px;
-    border-radius: 4%;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: 8;
-    transition: 0.5s ease;
-  }
-  
-  section img:hover {
-    cursor: ew-resize;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-  }
-  
-  .aside {
-    height: 0%;
-    display: flex;
-    justify-content: center;
-    padding: 0px;
-    mix-blend-mode: luminosity;
-  }
-  
-  h1 {
-    text-shadow: 23px 20px 11px rgb(9 76 78 / 71%);
-    font-size: xxx-large;
-    mix-blend-mode: plus-lighter;
-  }
-  
-  h3 {
-    text-shadow: 23px 20px 11px rgb(9 76 78 / 71%);
-    mix-blend-mode: plus-lighter;
-  }
-  
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height: 450px;
+}
+
+img {
+  width: 0px;
+  border-radius: 4%;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 8;
+  transition: 0.5s ease;
+}
+
+section img:hover {
+  cursor: ew-resize;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.aside {
+  height: 0%;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  mix-blend-mode: luminosity;
+}
+
+h1 {
+  text-shadow: 23px 20px 11px rgb(9 76 78 / 71%);
+  font-size: xxx-large;
+  mix-blend-mode: plus-lighter;
+}
+
+h3 {
+  text-shadow: 23px 20px 11px rgb(9 76 78 / 71%);
+  mix-blend-mode: plus-lighter;
+}
